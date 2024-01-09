@@ -1,0 +1,85 @@
+/*Global styles for all elements*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*styles for body*/
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Style for container div*/
+.container{
+    display: flex;
+    flex-flow: wrap row;
+    border: 1px solid #000;
+    height: 500px;
+    width: 800px;
+    padding: 10px;
+}
+/*Common style for box divs*/
+.box{
+    border: 1px solid #000;
+   
+}
+/*style for first box div*/
+.box:nth-child(1){
+    flex:0 1 100%;
+    height: 35%;
+    background: #FF9999;
+}
+/*style for second box div*/
+.box:nth-child(2){
+    flex:0 1 70%;
+    height: 65%;
+    align-items: center;
+    background: yellow;
+}
+/*style for third box div*/
+.box:nth-child(3){
+    flex:0 1 30%;
+    height: 65%;
+    background: #ECECFB;
+    
+
+}
+/*Style for image inside box div no 2*/
+.image1{
+    width: 100%;
+    padding: 10px;
+    
+}
+/*Style for image inside box div no 3*/
+.image2{
+    width: 70%;
+    display: block;
+    margin: 5px auto 0;
+}
+/*Style for h1 inside box div no 1*/
+.box:nth-child(1) h1{
+    padding: 10px 100px 20px;
+    font-weight: 100;
+    color: #413a3a;
+}
+/*Style for h3 inside box div no 1*/
+.box:nth-child(1) h3{
+    padding: 0px 80px 20px;
+    font-weight: 100;
+    color: #413a3a;
+}
+/*Style for h1 inside box div no 3*/
+.box:nth-child(3) h1{
+    font-weight: 300;
+    text-align: center;
+    color: #413a3a;
+}
+/*Style for paragraph inside box div no 3*/
+.box:nth-child(3) p{
+    margin: 0 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #413a3a;
+}
